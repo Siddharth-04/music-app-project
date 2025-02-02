@@ -11,6 +11,7 @@ import songContext from './context/songContext';
 import SearchPage from "./routes/SearchPage";
 import { useState } from 'react';
 import Library from './routes/Library';
+import "./styles/shimmer.css";
 
 
 function App() {
