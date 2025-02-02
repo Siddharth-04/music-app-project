@@ -3,6 +3,7 @@ import React from "react";
 import TextWithHover from "../components/shared/TextWithHover";
 import spotify_logo from "../assets/images/newLogo3.jpg";
 import IconText from "../components/shared/IconText";
+import { Navigate, useNavigate } from "react-router-dom";
  
 const focusCardsData = [
     {
@@ -62,6 +63,8 @@ const spotifyPlaylistsCardData = [
 
 const Home = ()=>{
 
+    const navigate = useNavigate();
+
     return(
         <div className="h-full w-full flex">
             {/* This is left panel */}
@@ -109,7 +112,8 @@ const Home = ()=>{
                         <div className="w-2/5 flex justify-around h-full items-center">
                             <TextWithHover displayText={"Sign up"}/>
 
-                            <div className="bg-white h-2/3 px-8 flex items-center justify-center rounded-full font-semibold cursor-pointer">
+                            <div className="bg-white h-2/3 px-8 flex items-center justify-center rounded-full font-semibold cursor-pointer"
+                            onClick={() => navigate("/login")}>
                                 Log In
                             </div>
                         </div>
