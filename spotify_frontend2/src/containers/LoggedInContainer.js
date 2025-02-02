@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 import React, { Children, useContext, useLayoutEffect, useState,useRef } from "react";
 import {Howl,Howler} from 'howler';
 import TextWithHover from "../components/shared/TextWithHover";
-import spotify_logo from "../assets/images/spotify_logo_white.svg";
+import spotify_logo from "../assets/images/newLogo3.jpg";
 import IconText from "../components/shared/IconText";
 import songContext from "../context/songContext";
 import CreatePlaylistModal from "../modals/CreatePlaylistModal";
@@ -83,7 +83,7 @@ const LoggedInContainer = ({children,currActive})=>{
                     <div>
                         {/* logo div */}
                         <div className="logoDiv p-6">
-                            <img src={spotify_logo} alt="logo" width={130}/>
+                            <img src={spotify_logo} alt="logo" width={150} height={150}/>
                         </div>
                             
                         <div className="py-6">

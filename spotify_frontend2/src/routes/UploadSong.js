@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import { useState } from "react";
 import TextWithHover from "../components/shared/TextWithHover";
-import spotify_logo from "../assets/images/spotify_logo_white.svg";
+import spotify_logo from "../assets/images/newLogo3.jpg";
 import IconText from "../components/shared/IconText";
 import TextInput from "../components/shared/TextInput";
 import CloudinaryUpload from "../components/shared/CloudinaryUpload";
